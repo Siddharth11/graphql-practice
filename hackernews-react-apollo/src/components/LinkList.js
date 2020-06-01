@@ -27,11 +27,11 @@ class LinkList extends Component {
           const linksToRender = data.feed.links;
 
           return (
-            <div>
+            <ul>
               {linksToRender.map((link) => (
                 <Link key={link.id} link={link} />
               ))}
-            </div>
+            </ul>
           );
         }}
       </Query>
